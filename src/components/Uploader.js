@@ -104,7 +104,7 @@ const Uploader = observer(() => {
                     <H1>上传结果</H1>
                     <dl>
                         <dt>线上地址</dt>
-                        <dd><a target="_blank" href={ImageStore.serverFile.attributes.url.attributes.url}>{ImageStore.serverFile.attributes.url.attributes.url}</a></dd>
+                        <dd><a rel="noopener noreferrer" target="_blank" href={ImageStore.serverFile.attributes.url.attributes.url}>{ImageStore.serverFile.attributes.url.attributes.url}</a></dd>
                         <dt>文件名</dt>
                         <dd>{ImageStore.filename}</dd>
                         <dt>图片预览</dt>
@@ -117,7 +117,7 @@ const Uploader = observer(() => {
                             <input ref={ref2} onChange={bindHeightChange} placeholder="最大高度（可选）" />
                         </dd>
                         <dd>
-                            <a target="_blank" href={store.fullStr}>{store.fullStr}</a>
+                            <a rel="noopener noreferrer" target="_blank" href={store.fullStr}>{store.fullStr}</a>
                         </dd>
                     </dl>
                 </Result> : null

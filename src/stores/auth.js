@@ -21,7 +21,6 @@ class AuthStore {
   @action register() {
     return new Promise((resolve, reject) => {
       Auth.register(this.values.username, this.values.password).then(user => {
-        console.log('注册成功');
         UserStore.pullUser();
         resolve(user);
       }).catch(err => {

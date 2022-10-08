@@ -1,7 +1,6 @@
 import React from 'react';
-import { observer } from 'mobx-react';
 import { useStores } from '../stores';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 

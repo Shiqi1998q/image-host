@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LogoUrl from '../logo.png';
 import { NavLink, useHistory } from 'react-router-dom';
 import styled from 'styled-components';

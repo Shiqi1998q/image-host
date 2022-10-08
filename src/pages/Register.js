@@ -1,7 +1,6 @@
 import React from 'react';
-import { observer } from 'mobx-react';
 import { useStores } from '../stores';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
@@ -22,7 +21,6 @@ const Component = () => {
   const { AuthStore } = useStores();
   const history = useHistory();
   const onFinish = (values) => {
-    console.log('Success:', values);
     AuthStore.setUsername(values.username);
     AuthStore.setPassword(values.password);
     AuthStore.register()

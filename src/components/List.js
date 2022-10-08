@@ -20,12 +20,10 @@ const Component = observer(() => {
     };
 
     useEffect(() => {
-
-
         return () => {
             HistoryStore.reset();
         };
-    }, []);
+    });
 
     return (
         UserStore.currentUser ?
@@ -48,7 +46,7 @@ const Component = observer(() => {
                                     <h5>{item.attributes.filename}</h5>
                                 </div>
                                 <div>
-                                    <a target="_blank" href={item.attributes.url.attributes.url}>{item.attributes.url.attributes.url}</a>
+                                    <a target="_blank" href={item.attributes.url.attributes.url} rel="noopener noreferrer">{item.attributes.url.attributes.url}</a>
                                 </div>
                             </List.Item>
                         }
